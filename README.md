@@ -1,3 +1,11 @@
+# The World of James Bond
+
+D:\Github> npx create-react-app the-world-of-james-bond --template typescript
+D:\Github\the-world-of-james-bond> npm install -D tailwindcss
+D:\Github\the-world-of-james-bond> npx tailwindcss init
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

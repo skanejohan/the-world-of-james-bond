@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Background from './Components/Background';
+import MovieList from './Components/MovieList';
+import MovieData from './Data/MovieData';
+
+import gps from "./Assets/gps.png";
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  const content = (
+    <div>
+      <p className="mb-1 flex flex-col items-center justify-center text-5xl text-gray-700 cursor-default">The World of James Bond</p>
+      <br></br>
+      <MovieList movies={MovieData} />
     </div>
+  )
+
+  return (
+      <Background content={content} imageUrl={gps}/>
   );
 }
 
