@@ -1,7 +1,7 @@
 import Movie from "./Movie";
 
 interface Props {
-    movies: {id: number, title: string, year: number, enabled: boolean}[];
+    movies: {id: number, title: string, year: number, enabled: boolean, description: string}[];
 }
 
 const MovieList = ({movies}: Props) => {
