@@ -1,5 +1,7 @@
+import IMovie from "../types";
+
 interface Props {
-    movie: {id: number, title: string, year: number, enabled: boolean, description: string};
+    movie: IMovie;
 }
 
 const Movie = ({movie}: Props) => {

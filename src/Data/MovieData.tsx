@@ -1,4 +1,6 @@
-const MovieData : {id: number, title: string, year: number, enabled: boolean, description: string}[] = [
+import IMovie from "../types";
+
+const MovieData : IMovie[] = [
 	{ id: 1, title: "Dr. No", year: 1962, enabled: true, description: "The original. Hot beaches, a waterfall and a mysterious island." },
 	{ id: 2, title: "From Russia With Love", year: 1963, enabled: false, description: "" },
 	{ id: 3, title: "Goldfinger", year: 1964, enabled: false, description: "" },
