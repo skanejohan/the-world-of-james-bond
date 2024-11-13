@@ -11,7 +11,7 @@ function App() {
 
   const content = (
     <div>
-      <p className="mb-1 flex flex-col items-center justify-center text-5xl text-gray-700 cursor-default">The World of James Bond</p>
+      <p className="mb-1 flex flex-col items-center justify-center text-5xl text-gray-700 cursor-default font-teaChestRegular">The World of James Bond</p>
       <br></br>
       <MovieList movies={MovieData} />
     </div>

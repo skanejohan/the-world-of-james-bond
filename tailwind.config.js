@@ -16,6 +16,7 @@ export const theme = {
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
+      teaChestRegular: ["TeaChestRegular", "sans-serif"],
     },
     spacing: {
       180: "32rem",

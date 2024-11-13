@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
+
+@font-face {
+    font-family: "TeaChestRegular";
+    src: url("../public/fonts/TeaChestRegular.ttf");
+}
