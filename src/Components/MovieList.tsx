@@ -3,12 +3,13 @@ import Movie from "./Movie";
 
 interface Props {
     movies: IMovie[];
+    onSelect: (movie: IMovie) => void;
 }
 
-const MovieList = ({movies}: Props) => {
+const MovieList = ({movies, onSelect}: Props) => {
   return (
     <div >
-      {movies.map(m => <Movie movie={m} />)}
+      {movies.map(m => <Movie key={m.id} movie={m} onSelect={onSelect}/>)}
     </div>
   )
 }
