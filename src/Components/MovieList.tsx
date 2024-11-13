@@ -1,4 +1,4 @@
-import IMovie from "../types";
+import { IMovie } from "../types";
 import Movie from "./Movie";
 
 interface Props {
