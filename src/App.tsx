@@ -17,11 +17,17 @@ function App() {
   return (
     selectedMovie == null
     ? (
-        <Background content={<MovieList movies={Movies} onSelect={setSelectedMovie}/>} imageUrl={gps}/>
+        <Background 
+          imageUrl={gps} 
+          header="The World of James Bond" 
+          footer="From mountains to beaches. From ski slopes to the moon." 
+          content={<MovieList movies={Movies} onSelect={setSelectedMovie}/>} />
     ) : (
-      <div onClick={() => setSelectedMovie(null)}>
-        <MovieDetails movie={selectedMovie} key={selectedMovie.id} />
-      </div>
+      <Background 
+        imageUrl={gps} 
+        header={selectedMovie.title} 
+        footer={selectedMovie.year.toString()}
+        content={<div onClick={() => setSelectedMovie(null)}><MovieDetails movie={selectedMovie} key={selectedMovie.id} /></div>} />
     )
   );
 }
