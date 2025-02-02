@@ -3,7 +3,9 @@
 D:\Github> npx create-react-app the-world-of-james-bond --template typescript
 D:\Github\the-world-of-james-bond> npm install -D tailwindcss
 D:\Github\the-world-of-james-bond> npx tailwindcss init
-
+D:\Github\the-world-of-james-bond> npm install '@vis.gl/react-google-maps'
+D:\Github\the-world-of-james-bond> npm install react-draggable
+D:\Github\the-world-of-james-bond> npm i -S react-rnd
 
 
 # Getting Started with Create React App
