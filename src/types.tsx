@@ -3,5 +3,11 @@ export interface IMovie {
     title: string;
     year: number;
     poster: string;
-    enabled: boolean;
+    scenes: IScene[];
+}
+
+export interface IScene {
+    title: string;
+    content: string;
+    time: Date
 }

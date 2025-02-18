@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import MovieGrid from './Components/MovieGrid';
-import { Movies } from './Data/movies';
-import './Styles/styles.css';
-import { IMovie } from './types';
 import { Fade } from "react-awesome-reveal";
+import MovieGrid from './Components/MovieGrid';
+import MovieView from './Components/MovieView';
+import { Movies } from './Data/movies';
+import { IMovie } from './types';
+import './Styles/styles.css';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState<IMovie | null>();
@@ -18,7 +19,7 @@ function App() {
       : <div>
           <div>
             <Fade duration={1000}>
-              <img src={selectedMovie.poster} className="rounded-sm" onClick={() => setSelectedMovie(null)}/>
+              <MovieView movie={selectedMovie} onClose={() => setSelectedMovie(null)}/>
             </Fade>
           </div>
         </div>

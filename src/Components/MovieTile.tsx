@@ -7,16 +7,17 @@ interface Props {
 
 const MovieTile = ({ movie, onSelect }: Props) => {
 
+    const enabled = movie.scenes.length > 0;
     const divBaseClass = `bg-gray-800 `;
-    const divClass = movie.enabled ? divBaseClass : `${divBaseClass} grayscale`;
+    const divClass = enabled ? divBaseClass : `${divBaseClass} grayscale`;
 
     const buttonBaseClass = "rounded-md border-4";
-    const buttonClass = movie.enabled 
+    const buttonClass = enabled 
         ? `${buttonBaseClass} border-sky-500 cursor-pointer transition duration-300 hover:scale-105` 
         : `${buttonBaseClass} border-sky-800 cursor-default`;
 
     const clickHandler = () => {
-        if (movie.enabled) {
+        if (enabled) {
             onSelect(movie);
         }
     }
